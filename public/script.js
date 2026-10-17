@@ -1,14 +1,14 @@
 
 function calculatePrice(propertyType, rooms) {
-  let price = 0;
+  let pricePerRoom = 0;
   if (propertyType === "house") {
-    price = 500;
+    pricePerRoom = 500;
   } else if (propertyType === "condo") {
-    price = 300;
+    pricePerRoom = 300;
   } else {
     return "Invalid property type";
   }
-  return price * rooms;
+  return pricePerRoom * rooms;
 }
 
 const calculateButton = document.getElementById("calculateButton");
@@ -24,6 +24,11 @@ calculateButton.addEventListener("click", function () {
 
   const result = calculatePrice(propertyType, rooms);
 
-  document.getElementById("result").textContent = result;
+  const formattedResult = new Intl.NumberFormat("en-CA", {
+  style: "currency",
+  currency: "CAD"
+}).format(result);
+
+document.getElementById("result").textContent = formattedResult;
 });
 // Learning Git: my first tracked change.
