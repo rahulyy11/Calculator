@@ -26,3 +26,4 @@ calculateButton.addEventListener("click", function () {
 
   document.getElementById("result").textContent = result;
 });
+// Learning Git: my first tracked change.
