@@ -1,6 +1,5 @@
-
 export default {
-  async fetch(request) {
-    return new Response("Your calculator Worker is running!");
+  async fetch(request, env) {
+    return env.ASSETS.fetch(request);
   },
 };
