@@ -3,8 +3,22 @@
   "name": "calculator",
   "main": "worker.js",
   "compatibility_date": "2026-10-17",
+
+  "vars": {
+    "FROM_EMAIL": "onboarding@resend.dev",
+    "NOTIFY_EMAIL": "r15027037@gmail.com"
+  },
+
   "assets": {
     "directory": "./public",
     "binding": "ASSETS"
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "rookie_training_messages",
+      "database_name": "rookie-training-messages",
+      "database_id": "dbdde077-89af-45ba-b0f5-96dca5ec945a",
+      "remote": true
+    }
+  ]
 }
