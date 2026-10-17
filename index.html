@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Price Calculator</h1>
+
+  <label for="propertyType">Property type:</label>
+  <select id="propertyType">
+    <option value="house">House</option>
+    <option value="condo">Condo</option>
+  </select>
+
+  <br><br>
+
+  <label for="rooms">Number of rooms:</label>
+  <input id="rooms" type="number" min="1" value="1">
+
+  <br><br>
+
+  <button id="calculateButton">Calculate price</button>
+
+  <h2 id="result">Your price will appear here.</h2>
+  <script src="script.js"></script>
+</body>
+</html>
